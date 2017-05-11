@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+:root body {
+	background-color: #fff;
+}
+
+.login #login h1 a {
+	width: 227px;
+	height: 62px;
+	background: url(/streetview/img/logo.jpg) no-repeat 0 0;
+}
+
+:root .wp-core-ui .button-primary {
+    background: #000;
+    border-color: #000 #000 #000;
+    -webkit-box-shadow: 0 1px 0 #000;
+    box-shadow: 0 1px 0 #000;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #000,1px 0 1px #000,0 1px 1px #000,-1px 0 1px #000;
+}
+
+
+:root input[type=text],
+:root input[type=search],
+:root input[type=radio],
+:root input[type=tel],
+:root input[type=time],
+:root input[type=url],
+:root input[type=week],
+:root input[type=password],
+:root input[type=checkbox],
+:root input[type=color],
+:root input[type=date],
+:root input[type=datetime],
+:root input[type=datetime-local],
+:root input[type=email],
+:root input[type=month],
+:root input[type=number],
+:root select,
+:root textarea {
+    border: 1px solid #000;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .07);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .07);
+    background-color: #fff;
+    color: #32373c;
+    outline: 0;
+    -webkit-transition: 50ms border-color ease-in-out;
+    transition: 50ms border-color ease-in-out
+}
+
+:root input[type=text]:focus,
+:root input[type=search]:focus,
+:root input[type=radio]:focus,
+:root input[type=tel]:focus,
+:root input[type=time]:focus,
+:root input[type=url]:focus,
+:root input[type=week]:focus,
+:root input[type=password]:focus,
+:root input[type=checkbox]:focus,
+:root input[type=color]:focus,
+:root input[type=date]:focus,
+:root input[type=datetime]:focus,
+:root input[type=datetime-local]:focus,
+:root input[type=email]:focus,
+:root input[type=month]:focus,
+:root input[type=number]:focus,
+:root select:focus,
+:root textarea:focus {
+    border-color: #000;
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, .8);
+    box-shadow: 0 0 2px rgba(0, 0, 0, .8)
+}
+
+:root input[type=radio],
+:root input[type=checkbox] {
+    border: 1px solid #000;
+    /*
+    background: #fff;
+    color: #555;
+    clear: none;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 0;
+    height: 16px;
+    margin: -4px 4px 0 0;
+    outline: 0;
+    padding: 0!important;
+    text-align: center;
+    vertical-align: middle;
+    width: 16px;
+    min-width: 16px;
+    -webkit-appearance: none;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+    -webkit-transition: .05s border-color ease-in-out;
+    transition: .05s border-color ease-in-out
+    */
+}
+:root input[type=radio]:checked,
+:root input[type=checkbox]:checked {
+    border: 1px solid #c73538;	/* 赤 */
+}
+
+
+
+:root input[type=checkbox]:checked:before {
+    content: "\f147";
+    margin: -3px 0 0 -4px;
+    color: #c73538;	/* 赤 */
+}
+
+/* オートコンプリートのとき、背景を黄色にしない */
+:root input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #f1f1f1 inset;
+}
+:root input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px #f1f1f1 inset;
+}
+
+
+
+:root .login #login_error, .login .message {
+    border-left: 4px solid #c73538;	/* 赤 */
+}
+
+
